@@ -1,3 +1,7 @@
+## 1.0.5
+
+- upd documentation
+
 ## 1.0.4
 
 - Add encrypt & decrypt file bytes
