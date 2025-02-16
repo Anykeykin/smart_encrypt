@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+import 'package:smart_encrypt/src/crypto_aes.dart';
 import 'package:smart_encrypt/src/crypto_hash.dart';
 import 'package:smart_encrypt/src/crypto_random.dart';
 
@@ -14,5 +15,21 @@ class SmartEncrypt {
 
   static String createDataHash256(String data) {
     return CryptoHash.hashSHA256(data);
+  }
+
+  static Uint8List createKey() {
+    return CryptoAes.generateAESKey();
+  }
+
+  static Uint8List createIV() {
+    return CryptoAes.generateIV();
+  }
+
+  static String encrypt(String data,Uint8List key,Uint8List iv) {
+    return CryptoAes.encryptAES(data,key,iv);
+  }
+
+  static String decrypt(String data,Uint8List key,Uint8List iv) {
+    return CryptoAes.decryptAES(data,key,iv);
   }
 }
