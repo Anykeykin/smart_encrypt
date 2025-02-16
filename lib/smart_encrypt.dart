@@ -3,6 +3,6 @@
 /// More dartdocs go here.
 library;
 
-export 'src/smart_ecrypt_base.dart';
+export 'src/smart_encrypt_base.dart';
 
 // TODO: Export any libraries intended for clients of this package.
