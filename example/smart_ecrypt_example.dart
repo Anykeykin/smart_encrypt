@@ -1,4 +1,3 @@
-
 import 'package:smart_encrypt/smart_ecrypt.dart';
 
 void main() {
