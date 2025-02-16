@@ -1,3 +1,4 @@
 ## 1.0.0
 
-- Initial version.
+- Add generate random numbers
+- Add generate random string
