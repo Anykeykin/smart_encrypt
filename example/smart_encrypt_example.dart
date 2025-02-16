@@ -1,4 +1,4 @@
-import 'package:smart_encrypt/smart_ecrypt.dart';
+import 'package:smart_encrypt/smart_encrypt.dart';
 
 void main() {
   print(SmartEncrypt.getRandomNumbers(24));
