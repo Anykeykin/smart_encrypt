@@ -24,6 +24,6 @@ encrypt(String data, Uint8List key, Uint8List iv): Encrypt data
 
 decrypt(String data, Uint8List key, Uint8List iv): Decrypt data
 
-fastEncryptFile(List<int> data,int shift): Encrypt fileBytes
+fastEncryptFile(List data, int shift): Encrypt fileBytes
 
-fastDecryptFile(List<int> data,int shift): Decrypt fileBytes
+fastDecryptFile(List data, int shift): Decrypt fileBytes
