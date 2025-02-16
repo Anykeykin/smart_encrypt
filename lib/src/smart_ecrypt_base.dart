@@ -8,4 +8,8 @@ class SmartEncrypt {
   static Uint8List getRandomNumbers(int length){
     return CryptoRandom.generateBytes(length);
   }
+
+  static String getRandomString(int length){
+    return CryptoRandom.generateString(length);
+  }
 }
