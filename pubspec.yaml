@@ -1,6 +1,6 @@
-name: smart_ecrypt
+name: smart_encrypt
 description: library for easy use encrypt & decrypt features, generate bytes & string
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/Anykeykin/smart_encrypt
 
 environment:
@@ -8,7 +8,7 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  # path: ^1.8.0
+  crypto: 3.0.3
 
 dev_dependencies:
   lints: ^2.0.0
