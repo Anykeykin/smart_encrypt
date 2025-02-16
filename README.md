@@ -5,6 +5,7 @@ smart_encrypt is a library for easy use of encryption tools
 - Generating random numbers of a given length
 - Generating random strings of a given length
 - Generating hash256 from strings
+- File bytes fast encrypt & decrypt
 - Encrypt & Decrypt string dart
 
 ## API 📚
@@ -22,3 +23,7 @@ createIV(): Create IV.
 encrypt(String data, Uint8List key, Uint8List iv): Encrypt data
 
 decrypt(String data, Uint8List key, Uint8List iv): Decrypt data
+
+fastEncryptFile(List<int> data,int shift): Encrypt fileBytes
+
+fastDecryptFile(List<int> data,int shift): Decrypt fileBytes

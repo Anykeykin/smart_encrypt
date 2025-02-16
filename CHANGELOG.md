@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Add encrypt & decrypt file bytes
+
 ## 1.0.3
 
 - Add encrypt & decrypt methods
