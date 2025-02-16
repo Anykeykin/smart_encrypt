@@ -25,11 +25,11 @@ class SmartEncrypt {
     return CryptoAes.generateIV();
   }
 
-  static String encrypt(String data,Uint8List key,Uint8List iv) {
-    return CryptoAes.encryptAES(data,key,iv);
+  static String encrypt(String data, Uint8List key, Uint8List iv) {
+    return CryptoAes.encryptAES(data, key, iv);
   }
 
-  static String decrypt(String data,Uint8List key,Uint8List iv) {
-    return CryptoAes.decryptAES(data,key,iv);
+  static String decrypt(String data, Uint8List key, Uint8List iv) {
+    return CryptoAes.decryptAES(data, key, iv);
   }
 }
