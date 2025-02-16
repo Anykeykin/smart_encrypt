@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Add encrypt & decrypt methods
+
 ## 1.0.2
 
 - upd readme
