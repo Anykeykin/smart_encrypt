@@ -11,6 +11,7 @@ class SmartEncrypt {
   static Uint8List getRandomNumbers(int length) {
     return CryptoRandom.generateBytes(length);
   }
+
   ///Method for generate random string of a given length
   static String getRandomString(int length) {
     return CryptoRandom.generateString(length);
@@ -40,7 +41,7 @@ class SmartEncrypt {
   static Future<List<int>> fastEncryptFile(List<int> data, int shift) async {
     return await Isolate.run(() => CaesarCipher(shift: shift).caesar(data));
   }
-  
+
   ///Method for fast decrypting all files bytes
   static Future<List<int>> fastDecryptFile(List<int> data, int shift) async {
     return await Isolate.run(
