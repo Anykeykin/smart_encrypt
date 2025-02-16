@@ -1,6 +1,7 @@
 name: smart_ecrypt
 description: library for easy use encrypt & decrypt features, generate bytes & string
 version: 1.0.0
+homepage: https://github.com/Anykeykin/smart_encrypt
 
 environment:
   sdk: ^3.1.5
