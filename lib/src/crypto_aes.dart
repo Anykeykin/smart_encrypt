@@ -21,7 +21,8 @@ class CryptoAes {
 
   static String decryptAES(String encrypted, Uint8List key, Uint8List iv) {
     final encrypter = Encrypter(AES(Key(key), mode: AESMode.cbc));
-    final decrypted = encrypter.decrypt(Encrypted(base64.decode(encrypted)), iv: IV(iv));
+    final decrypted =
+        encrypter.decrypt(Encrypted(base64.decode(encrypted)), iv: IV(iv));
     return decrypted;
   }
 }
