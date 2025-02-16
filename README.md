@@ -4,6 +4,7 @@ smart_encrypt is a library for easy use of encryption tools
 ## Functional:
 - Generating random numbers of a given length
 - Generating random strings of a given length
+- Generating hash256 from strings
 - In development other features
 
 ## API 📚
