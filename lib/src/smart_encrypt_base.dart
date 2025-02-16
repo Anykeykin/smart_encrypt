@@ -1,5 +1,7 @@
+import 'dart:isolate';
 import 'dart:typed_data';
 import 'package:smart_encrypt/src/crypto_aes.dart';
+import 'package:smart_encrypt/src/crypto_files.dart';
 import 'package:smart_encrypt/src/crypto_hash.dart';
 import 'package:smart_encrypt/src/crypto_random.dart';
 
@@ -31,5 +33,14 @@ class SmartEncrypt {
 
   static String decrypt(String data, Uint8List key, Uint8List iv) {
     return CryptoAes.decryptAES(data, key, iv);
+  }
+
+  static Future<List<int>> fastEncryptFile(List<int> data, int shift) async {
+    return await Isolate.run(() => CaesarCipher(shift: shift).caesar(data));
+  }
+
+  static Future<List<int>> fastDecryptFile(List<int> data, int shift) async {
+    return await Isolate.run(
+        () => CaesarCipher(shift: shift).caesarDecrypt(data));
   }
 }
