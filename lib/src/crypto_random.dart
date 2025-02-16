@@ -10,4 +10,17 @@ class CryptoRandom {
     }
     return bytes;
   }
+
+  static String generateString(int length) {
+    final random = Random.secure();
+    const availableChars =
+        'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    final result = StringBuffer();
+
+    for (var i = 0; i < length; i++) {
+      result.write(availableChars[random.nextInt(availableChars.length)]);
+    }
+
+    return result.toString();
+  }
 }
