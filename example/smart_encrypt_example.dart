@@ -22,4 +22,10 @@ void main() async {
   print('encrypt end');
   await SmartEncrypt.fastDecryptFile(encryptedFileBites, 250)
       .then((value) => print('decrypted'));
+
+  String dupli = 'Wow, hello';
+  dupli = SmartEncrypt.duplicatedEncrypt(dupli, key, iv);
+  print(dupli);
+  dupli = SmartEncrypt.duplicatedDecrypt(dupli, key, iv);
+  print(dupli);
 }
