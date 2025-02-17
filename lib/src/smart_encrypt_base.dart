@@ -36,6 +36,16 @@ class SmartEncrypt {
     return CryptoAes.decryptAES(data, key, iv);
   }
 
+  static String duplicatedDecrypt(String data, Uint8List key, Uint8List iv) {
+    final String decryptedString = CryptoAes.decryptAES(data, key, iv);
+    return CryptoAes.decryptAES(decryptedString, key, iv);
+  }
+
+  static String duplicatedEncrypt(String data, Uint8List key, Uint8List iv) {
+    final String encryptedString = CryptoAes.encryptAES(data, key, iv);
+    return CryptoAes.encryptAES(encryptedString, key, iv);
+  }
+
   ///Method for fast encrypting all files bytes
   static Future<List<int>> fastEncryptFile(List<int> data, int shift) async {
     return await Isolate.run(() => CaesarCipher(shift: shift).caesar(data));
