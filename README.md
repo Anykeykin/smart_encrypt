@@ -8,6 +8,7 @@ smart_encrypt is a library for easy use of encryption tools
 - File bytes fast encrypt & decrypt
 - Encrypt & Decrypt string dart
 - Duplicated Encrypt & Decrypt string dart
+- Very easy Encrypt & Decrypt string dart
 
 ## API 📚
 ### Basic methods
@@ -29,6 +30,11 @@ duplicatedEncrypt(String data, Uint8List key, Uint8List iv): Duplicated encrypt 
 
 duplicatedDecrypt(String data, Uint8List key, Uint8List iv): Duplicated decrypt data
 
+String easyEncrypt(String data): Easy encrypt data
+
+String easyDecrypt(String data): Easy decrypt data
+
 fastEncryptFile(List data, int shift): Encrypt fileBytes
 
 fastDecryptFile(List data, int shift): Decrypt fileBytes
+
