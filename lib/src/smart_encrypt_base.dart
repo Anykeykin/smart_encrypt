@@ -5,7 +5,6 @@ import 'package:smart_encrypt/src/crypto_files.dart';
 import 'package:smart_encrypt/src/crypto_hash.dart';
 import 'package:smart_encrypt/src/crypto_random.dart';
 
-/// Checks if you are awesome. Spoiler: you are.
 class SmartEncrypt {
   ///Method for generate random numbers of a given length
   static Uint8List getRandomNumbers(int length) {
