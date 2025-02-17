@@ -1,3 +1,7 @@
+## 1.0.6
+
+- fix decrypt & encrypt file
+
 ## 1.0.5
 
 - upd documentation
