@@ -28,4 +28,10 @@ void main() async {
   print(dupli);
   dupli = SmartEncrypt.duplicatedDecrypt(dupli, key, iv);
   print(dupli);
+
+   String easy = 'Hello Easy';
+  easy = SmartEncrypt.easyEncrypt(easy);
+  print(easy);
+  easy = SmartEncrypt.easyDecrypt(easy);
+  print(easy);
 }
