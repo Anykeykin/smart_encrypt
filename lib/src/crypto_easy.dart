@@ -1,7 +1,7 @@
 import 'package:encrypt/encrypt.dart';
 
 class CryptoLight{
-  static final _key = Key.fromUtf8('32-characters-long-secret-key!');
+  static final _key = Key.fromUtf8('UDcXCFsh6pQxlV0CfPmBPVxyihvtu5g0');
   static final _iv = IV.fromLength(16);
 
   static String encrypt(String input) {
