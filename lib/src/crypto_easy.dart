@@ -1,6 +1,6 @@
 import 'package:encrypt/encrypt.dart';
 
-class CryptoLight{
+class CryptoLight {
   static final _key = Key.fromUtf8('UDcXCFsh6pQxlV0CfPmBPVxyihvtu5g0');
   static final _iv = IV.fromLength(16);
 
