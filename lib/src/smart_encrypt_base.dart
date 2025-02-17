@@ -1,6 +1,7 @@
 import 'dart:isolate';
 import 'dart:typed_data';
 import 'package:smart_encrypt/src/crypto_aes.dart';
+import 'package:smart_encrypt/src/crypto_easy.dart';
 import 'package:smart_encrypt/src/crypto_files.dart';
 import 'package:smart_encrypt/src/crypto_hash.dart';
 import 'package:smart_encrypt/src/crypto_random.dart';
@@ -26,6 +27,14 @@ class SmartEncrypt {
 
   static Uint8List createIV() {
     return CryptoAes.generateIV();
+  }
+
+  static String easyEncrypt(String data) {
+    return CryptoLight.encrypt(data);
+  }
+
+  static String easyDecrypt(String data) {
+    return CryptoLight.decrypt(data);
   }
 
   static String encrypt(String data, Uint8List key, Uint8List iv) {
