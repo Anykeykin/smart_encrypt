@@ -1,3 +1,7 @@
+## 1.0.7
+
+- Add duplicated encrypt & decrypt methods
+
 ## 1.0.6
 
 - fix decrypt & encrypt file
