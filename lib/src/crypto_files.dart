@@ -5,12 +5,13 @@ class CaesarCipher {
 
   List<int> caesar(List<int> fileBytes) {
     List<int> result = [];
-    print(fileBytes.length);
     for (var i = 0; i < fileBytes.length; i++) {
-      if (i.isEven || i > 1000000) continue;
-      final char = fileBytes[i];
-      final shiftedChar = char + shift;
-      result.add(shiftedChar);
+      int char = fileBytes[i];
+      if (i.isEven || i > 1000000) {
+      } else {
+        char = char + shift;
+      }
+      result.add(char);
     }
 
     return result;
@@ -20,10 +21,12 @@ class CaesarCipher {
     List<int> result = [];
 
     for (var i = 0; i < fileBytes.length; i++) {
-      if (i.isEven || i > 1000000) continue;
-      final char = fileBytes[i];
-      final shiftedChar = char - shift;
-      result.add(shiftedChar);
+      int char = fileBytes[i];
+      if (i.isEven || i > 1000000) {
+      } else {
+        char = char - shift;
+      }
+      result.add(char);
     }
 
     return result;
