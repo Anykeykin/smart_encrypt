@@ -1,3 +1,7 @@
+## 1.0.8
+
+- Add easy encrypt & decrypt methods
+
 ## 1.0.7
 
 - Add duplicated encrypt & decrypt methods
