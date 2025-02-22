@@ -10,7 +10,8 @@ environment:
 dependencies:
   crypto: ^3.0.3
   encrypt: ^5.0.3
-
+  image: ^3.2.1
+  
 dev_dependencies:
   lints: ^2.0.0
   test: ^1.21.0
