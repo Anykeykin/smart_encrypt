@@ -1,3 +1,1 @@
-class Steganography{
-  
-}
+class Steganography {}
