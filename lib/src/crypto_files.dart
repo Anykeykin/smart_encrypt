@@ -32,7 +32,3 @@ class CaesarCipher {
     return result;
   }
 }
-
-class Steganography{
-  
-}
